@@ -18,6 +18,6 @@ public class EnemyController : MonoBehaviour
 
     public void Ping(Vector3 destination)
     {
-
+        Debug.Log("huh? Wat hoor ik daar?");
     }
 }

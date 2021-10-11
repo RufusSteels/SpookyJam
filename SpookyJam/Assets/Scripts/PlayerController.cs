@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Fields
+
     [SerializeField]
     private GameObject _skullModel;
+
+    [SerializeField]
+    private AudioSource bonk;
 
     [SerializeField]
     [Range(0, 30)]
     private float _speed = 5f;
 
-    private Vector3 _startPos;
-    private Quaternion _startRot;
+    [SerializeField]
+    private float _stunTime = .5f;
+    private float _stunTimer = 0;
 
     private Vector3 _verticalVelocity = Vector3.zero;
 
     private bool _falling = false;
     private bool _stunned = false;
 
-    [SerializeField]
-    private float _stunTime = 1f;
-    private float _stunTimer = 0;
+    private Vector3 _startPos;
+    private Quaternion _startRot;
 
     private GameObject[] _enemies;
 
-    [SerializeField]
-    private AudioSource bonk;
+    #endregion
 
+    #region LifeCycle
     private void Start()
     {
         _startPos = _skullModel.transform.localPosition;
@@ -38,26 +43,38 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            _falling = true;
-        }
+        CheckInputs();
 
         Move();
         Fall();
         Stun();
     }
+    #endregion
 
+    #region Methods
+    private void CheckInputs()
+    {
+        if (Input.GetButtonDown("Drop"))
+        {
+            _falling = true;
+        }
+    }
+
+    //move the player horizontally
     private void Move()
     {
         if (!_falling && !_stunned)
         {
             Vector3 velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * _speed;
             this.transform.position += velocity;
-            this.transform.forward = velocity.normalized;
+            if(velocity.magnitude != 0)
+            {
+                this.transform.forward = velocity.normalized;
+            }
         }
     }
 
+    //drop the player until it hits the ground and trigger a stun
     private void Fall()
     {
         if (_falling)
@@ -76,6 +93,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //stun the player for a moment after he dropped
     private void Stun()
     {
         if (_stunned)
@@ -91,16 +109,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Ping the enemies with the location of the drop and play a sound
     private void EmitNoise()
     {
         bonk.Play();
 
-        //foreach (GameObject e in _enemies)
-        //{
-        //    if(e.TryGetComponent<EnemyController>(out var enemy))
-        //    {
-        //        enemy.Ping(this.transform.position);
-        //    }
-        //}
+        foreach (GameObject e in _enemies)
+        {
+            if(e.TryGetComponent<EnemyController>(out var enemy))
+            {
+                enemy.Ping(this.transform.position);
+            }
+        }
     }
+    #endregion
 }
