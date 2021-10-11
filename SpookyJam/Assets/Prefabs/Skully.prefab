@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4195366982463807216}
+  - component: {fileID: 8253632427541592132}
   - component: {fileID: -1438023339687953404}
   - component: {fileID: -1552705011578457112}
-  - component: {fileID: 5386756061682976690}
   m_Layer: 0
   m_Name: Skully
   m_TagString: Untagged
@@ -34,6 +34,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &8253632427541592132
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195366982463807217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 0
+  m_Radius: 1.6
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 5.6, z: 0}
 --- !u!114 &-1438023339687953404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,10 +64,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 840304b26a9bce541a2de6317e09954a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _character: {fileID: 8253632427541592132}
   _skullModel: {fileID: 842048440908554367}
-  _speed: 5
-  _stunTime: 0.5
   bonk: {fileID: -1552705011578457112}
+  _speed: 15
+  _stunTime: 0.5
 --- !u!82 &-1552705011578457112
 AudioSource:
   m_ObjectHideFlags: 0
@@ -146,19 +165,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!135 &5386756061682976690
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4195366982463807217}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.6
-  m_Center: {x: 0, y: 5.6, z: 0}
 --- !u!1001 &535619708973194542
 PrefabInstance:
   m_ObjectHideFlags: 0
