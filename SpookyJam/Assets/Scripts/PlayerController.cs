@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         _enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
-    void Update()
+    void FixedUpdate()
     {
         CheckInputs();
 
@@ -69,11 +69,11 @@ public class PlayerController : MonoBehaviour
     {
         if (!_falling && !_stunned)
         {
-            Vector3 velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * _speed;
-            _character.Move(velocity);
-            if(velocity.magnitude != 0)
-            {
-                this.transform.forward = velocity.normalized;
+            Vector3 velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            _character.Move(velocity * Time.deltaTime * _speed);
+            if(velocity!=Vector3.zero)
+            { 
+                this.transform.forward = velocity;
             }
         }
     }

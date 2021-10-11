@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
         foreach (var collider in allObjs)
         {
             Debug.Log(collider);
-            if (collider.name == "Friendly")
+            if (collider.tag == "Friendly")
             {
                 _agent.destination = collider.gameObject.transform.position;
             }
