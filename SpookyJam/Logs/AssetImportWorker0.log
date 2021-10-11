@@ -202,3 +202,476 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002868 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.113 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1114ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (862ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (309ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1897.
+Total: 2.690500 ms (FindLiveObjects: 0.136700 ms CreateObjectMapping: 0.038300 ms MarkObjects: 2.496700 ms  DeleteObjects: 0.017400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2088.988886 seconds.
+  path: Assets/Models/Trap_Axe.obj
+  artifactKey: Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Axe.obj using Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7fcb0aa1f949e28c8d7e68ae4c207c3') in 0.136315 seconds 
+  Import took 0.138916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01897ffd41aa4cacc33879bcaae8df5') in 0.043192 seconds 
+  Import took 0.045459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.273130 seconds.
+  path: Assets/Prefabs/Friendly.prefab
+  artifactKey: Guid(d0842e027f356ed48bb946483d662f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Friendly.prefab using Guid(d0842e027f356ed48bb946483d662f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60676dca525b5d77daecc9339ced62c2') in 0.018103 seconds 
+  Import took 0.020459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Prefabs/WallShort.prefab
+  artifactKey: Guid(743b6ddae069f234a83b20ef98357e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/WallShort.prefab using Guid(743b6ddae069f234a83b20ef98357e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8853f5571fe2cd0f74057588fb98ab85') in 0.019141 seconds 
+  Import took 0.021607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Prefabs/PillarWall.prefab
+  artifactKey: Guid(1aed35c37a7a9384abaf8941d133ae1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PillarWall.prefab using Guid(1aed35c37a7a9384abaf8941d133ae1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381e776bcc72910ac28f6bd0aad6c3bc') in 0.017832 seconds 
+  Import took 0.020738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Prefabs/Wall.prefab
+  artifactKey: Guid(fa9cbd6b469d3a441bb4598f658ee0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Wall.prefab using Guid(fa9cbd6b469d3a441bb4598f658ee0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155ad70af501607f497f076e8fb832f6') in 0.033236 seconds 
+  Import took 0.036595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.118465 seconds.
+  path: Assets/Models/Hero.obj
+  artifactKey: Guid(7c3ce7dfd7057ca44b1589e3d6ede9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Hero.obj using Guid(7c3ce7dfd7057ca44b1589e3d6ede9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6bed7587ba1a83e2ed81726eba0d47') in 0.223852 seconds 
+  Import took 0.226429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.656664 seconds.
+  path: Assets/Models/Hero.obj
+  artifactKey: Guid(7c3ce7dfd7057ca44b1589e3d6ede9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Hero.obj using Guid(7c3ce7dfd7057ca44b1589e3d6ede9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975f78a6b20931d92ef3fc41fa8e997f') in 0.232330 seconds 
+  Import took 0.235529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.033464 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(2b1ead5509704ad4799107c98c391f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(2b1ead5509704ad4799107c98c391f95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0552b189a9a1ad4b02cdf4a91f38c23') in 0.016926 seconds 
+  Import took 0.019835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.968815 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f4cb77106d77d001d2303025e05a89') in 0.010299 seconds 
+  Import took 0.012993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Prefabs/Trap Base.prefab
+  artifactKey: Guid(372f0f14e61da024595502f58917f162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Base.prefab using Guid(372f0f14e61da024595502f58917f162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd845733607b33f62c9fa19c0cbf95a95') in 0.007966 seconds 
+  Import took 0.010373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b1e4d5609b6ab8ad67dff03fc8970d') in 0.011211 seconds 
+  Import took 0.013799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.436909 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777b0b1f57b138ae902e683eb477f527') in 0.004558 seconds 
+  Import took 0.007869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.944656 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de8e6d4d144ecf403c5d6438f05b0ee') in 0.017622 seconds 
+  Import took 0.020238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Trap Base.prefab
+  artifactKey: Guid(372f0f14e61da024595502f58917f162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Base.prefab using Guid(372f0f14e61da024595502f58917f162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f7d8da1770babc9acfcccff10242a9') in 0.018070 seconds 
+  Import took 0.021574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6b58fcecbe8b05708a6aae199da3e5') in 0.015875 seconds 
+  Import took 0.018804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.415006 seconds.
+  path: Assets/Models/Trap_Axe.obj
+  artifactKey: Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Axe.obj using Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600e897a5f9903d5d620accb4be3254e') in 0.089020 seconds 
+  Import took 0.091710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.949855 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e50f8e9611c31a439bccd6c00e6415e') in 0.016957 seconds 
+  Import took 0.019296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.498935 seconds.
+  path: Assets/Models/Trap_Axe.obj
+  artifactKey: Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Axe.obj using Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8aa6916d20df076cc49bb0f2766851d') in 0.081413 seconds 
+  Import took 0.083888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.640982 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286a5e43c59ac48086942e6ffd3d3d85') in 0.012894 seconds 
+  Import took 0.016140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.909824 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b34a364338e9a95a0f45bf6da8f517') in 0.014439 seconds 
+  Import took 0.017635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.795948 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ccf755bdb7d87277d88fba2c7c08a6') in 0.015239 seconds 
+  Import took 0.018014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.633629 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51c2f7ae8d058912f30285e333e6148') in 0.011770 seconds 
+  Import took 0.014814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.445902 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04966f5e53e9e4f22e18d4079716fe55') in 0.012116 seconds 
+  Import took 0.015475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.953580 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee1e7c9cf40d0274461a1592d2d2e68') in 0.012345 seconds 
+  Import took 0.015918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.606103 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1f0a748d6c1f1c43b9d55273932b1e') in 0.016167 seconds 
+  Import took 0.019890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.393018 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27979b902bdbd9875a6033bf01a3158f') in 0.010136 seconds 
+  Import took 0.013924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.230395 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f592755b4badd058ee64b2a1e9b177') in 0.011025 seconds 
+  Import took 0.014333 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.829882 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf614c218fc14b27e6ce45faae3ddb7') in 0.014731 seconds 
+  Import took 0.017608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.609676 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a2a8bf55261208cf06375115fda42e') in 0.013682 seconds 
+  Import took 0.016626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.416462 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d3df5e636ccaef51b2da10a376be47') in 0.013695 seconds 
+  Import took 0.016583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.415283 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76474633fe3712243926db93b8398e7b') in 0.012124 seconds 
+  Import took 0.015357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.432339 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '798ea7bd93f90077cf792793a44720c6') in 0.010769 seconds 
+  Import took 0.014145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.292644 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bf059cb10e62a9d565a0646fdece01') in 0.011946 seconds 
+  Import took 0.015583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.113017 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f21e78377bdf5e21a4cd990ec5ee003') in 0.017991 seconds 
+  Import took 0.021267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.257495 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb121998a3683d4a196f26468641f9d') in 0.014316 seconds 
+  Import took 0.017687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.994106 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc36477f3441ff6d3d4e3bc8f5735300') in 0.015826 seconds 
+  Import took 0.019339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.621632 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1807a5bc5dcef64578f84028749753') in 0.012067 seconds 
+  Import took 0.016479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.218044 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6e4c81c9c5cf6b3e466e8cc2fd882b') in 0.017325 seconds 
+  Import took 0.020143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.190863 seconds.
+  path: Assets/Prefabs/Trap Axe.prefab
+  artifactKey: Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Axe.prefab using Guid(46ed4021a3b2c64429b044de87814938) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9357f099d9833d704786ae3e9935c59c') in 0.013130 seconds 
+  Import took 0.016432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.127195 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8e7612ebe8304038867cc7deba7dfc') in 0.048817 seconds 
+  Import took 0.051573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.561578 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110de8ad3db87397e636ded831905c9d') in 0.012096 seconds 
+  Import took 0.014722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.985978 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf1fac492a6c552632562f76f6c74bf') in 0.045097 seconds 
+  Import took 0.048302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.638523 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a65a5bf32a9a8eaa533ee67b4e3988') in 0.014146 seconds 
+  Import took 0.017073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.841683 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50ed7f7de4c35582c088491c3bfe166') in 0.012962 seconds 
+  Import took 0.016545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.431754 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bc33dd61a4c5fc96312e7168fc608a') in 0.012385 seconds 
+  Import took 0.015397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.286744 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b7b02a49d454ab9f452265d15b52df') in 0.031218 seconds 
+  Import took 0.034216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.973543 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c93221bae3e5152cb2e6a510027e996') in 0.009664 seconds 
+  Import took 0.012516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.853249 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0387f2144087f948372edfeddd25e3') in 0.011327 seconds 
+  Import took 0.014117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.110628 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c5968d84e36966dba907e8a1e27e166') in 0.013336 seconds 
+  Import took 0.017804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.590585 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6be4e117108f2546ded0da9840cc5b7d') in 0.011941 seconds 
+  Import took 0.014874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.179974 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd115d8706fc942d3bac639d96da8f758') in 0.010350 seconds 
+  Import took 0.013302 seconds .
+
