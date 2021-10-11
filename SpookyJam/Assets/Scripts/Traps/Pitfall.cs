@@ -9,11 +9,17 @@ public class Pitfall : MonoBehaviour
 
     private bool _isUsed = false;
 
+    private void Start()
+    {
+        Cube.SetActive(false);
+    }
+
     private void Update()
     {
         if (_isUsed)
         {
-            Cube.active = true;
+            Cube.SetActive(true);
+
             Destroy(this);
         }
     }
