@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float _lookRadius;
     private NavMeshAgent _agent;
+    [SerializeField]
+    private LevelManager _levelManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +58,9 @@ public class EnemyController : MonoBehaviour
         }else if (other.gameObject.tag == "Friendly")
         {
             Debug.Log("KHEB JE VRIENDEN!");
-            Time.timeScale = 0.001f;
+            _levelManager._remainingFriendlies--;
+            Destroy(other.gameObject);
+            //Time.timeScale = 0.001f;
         }
     }
 

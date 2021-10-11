@@ -11,12 +11,16 @@ public class LevelManager : MonoBehaviour
     private Text _friendliesText;
 
     private int _maxFriendlies;
-    private int _remainingFriendlies;
+    public int _remainingFriendlies;
 
     void Start()
     {
         _maxFriendlies = Friendlies.Length;
         _remainingFriendlies = _maxFriendlies;
+        _friendliesText.text = _remainingFriendlies.ToString() + "/" + _maxFriendlies.ToString();
+    }
+    private void Update()
+    {
         _friendliesText.text = _remainingFriendlies.ToString() + "/" + _maxFriendlies.ToString();
     }
 
