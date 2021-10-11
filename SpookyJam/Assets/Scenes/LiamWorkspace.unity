@@ -1552,7 +1552,7 @@ MonoBehaviour:
   Friendlies:
   - {fileID: 1533176295}
   - {fileID: 408720747}
-  _friendliesText: {fileID: 0}
+  _friendliesText: {fileID: 419417198}
 --- !u!222 &419417201
 CanvasRenderer:
   m_ObjectHideFlags: 0
