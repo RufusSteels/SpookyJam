@@ -1,7 +1,16 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
-# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
+
+SpookyJam/Library/
+SpookyJam/Logs/
+SpookyJam/obj/
+SpookyJam/UserSettings/
+
+/Library/
+/Logs/
+/obj/
+/UserSettings/
+
+/Logs/AssetImportWorker0.log
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -9,6 +18,11 @@
 [Bb]uilds/
 [Ll]ogs/
 [Mm]emoryCaptures/
+
+# This .gitignore file should be placed at the root of your Unity project directory
+#
+# Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
+#
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
