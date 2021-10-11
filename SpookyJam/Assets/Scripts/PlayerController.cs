@@ -11,7 +11,9 @@ public class PlayerController : MonoBehaviour
     [Range(0, 30)]
     private float _speed = 5f;
 
-    private Transform _start;
+    private Vector3 _startPos;
+    private Quaternion _startRot;
+
     private Vector3 _verticalVelocity = Vector3.zero;
 
     private bool _falling = false;
@@ -28,7 +30,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _start = _skullModel.transform;
+        _startPos = _skullModel.transform.localPosition;
+        _startRot = _skullModel.transform.localRotation;
 
         _enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
@@ -81,8 +84,8 @@ public class PlayerController : MonoBehaviour
 
             if(_stunTimer < 0)
             {
-                _skullModel.transform.localPosition = new Vector3(0, 1.5f, 0);
-                _skullModel.transform.localRotation = _start.localRotation;
+                _skullModel.transform.localPosition = _startPos;
+                _skullModel.transform.localRotation = _startRot;
                 _stunned = false;
             }
         }
