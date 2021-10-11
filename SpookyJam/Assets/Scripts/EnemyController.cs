@@ -8,6 +8,9 @@ using UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] private GameObject _detectionCube;
+
+    [SerializeField]
+    private float _lookRadius;
     private NavMeshAgent _agent;
     // Start is called before the first frame update
     void Start()
@@ -27,17 +30,21 @@ public class EnemyController : MonoBehaviour
     private void FindNearestFriendly()
     {
         bool foundFriendly = false;
-        Collider[] allObjs = Physics.OverlapSphere(this.transform.position, 200);
+        Collider[] allObjs = Physics.OverlapSphere(this.transform.position, _lookRadius);
         foreach (var collider in allObjs)
         {
             if (collider.tag == "Friendly")
             {
+                Debug.Log("FOUND YA");
                 _agent.destination = collider.gameObject.transform.position;
+                this.GetComponent<Wander>().enabled = false;
                 foundFriendly = true;
             }
         }
-
-        
+        if (!foundFriendly)
+        {
+            this.GetComponent<Wander>().enabled = true;
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -46,16 +53,16 @@ public class EnemyController : MonoBehaviour
         {
             Debug.Log("GEZIEN!");
             Time.timeScale = 0.001f;
+        }else if (other.gameObject.tag == "Friendly")
+        {
+            Debug.Log("KHEB JE VRIENDEN!");
+            Time.timeScale = 0.001f;
         }
-
-        
     }
 
     public void Ping(Vector3 destination)
     {
         _agent.destination = destination;
-
-        
         Debug.Log("huh? Wat hoor ik daar?");
     }
 }
