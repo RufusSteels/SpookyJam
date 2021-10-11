@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         _enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
-    void FixedUpdate()
+    void Update()
     {
         CheckInputs();
 
