@@ -3,7 +3,12 @@ guid: acf9ec70a0eae3f45be7c2ac6e05f55d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallShortMat
+    second: {fileID: 2100000, guid: 16f271d1d0542d449835ef3515975c51, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
