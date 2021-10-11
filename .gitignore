@@ -3,5 +3,10 @@ SpookyJam/Library/
 SpookyJam/Logs/
 SpookyJam/obj/
 SpookyJam/UserSettings/
+
+/Library/
 /Logs/
+/obj/
+/UserSettings/
+
 /Logs/AssetImportWorker0.log
