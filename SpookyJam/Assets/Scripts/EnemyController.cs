@@ -26,15 +26,18 @@ public class EnemyController : MonoBehaviour
     }
     private void FindNearestFriendly()
     {
-        Collider[] allObjs = Physics.OverlapSphere(this.transform.position, 2000);
+        bool foundFriendly = false;
+        Collider[] allObjs = Physics.OverlapSphere(this.transform.position, 200);
         foreach (var collider in allObjs)
         {
-            Debug.Log(collider);
             if (collider.tag == "Friendly")
             {
                 _agent.destination = collider.gameObject.transform.position;
+                foundFriendly = true;
             }
         }
+
+        
     }
 
     void OnTriggerEnter(Collider other)
@@ -44,8 +47,6 @@ public class EnemyController : MonoBehaviour
             Debug.Log("GEZIEN!");
             Time.timeScale = 0.001f;
         }
-        //if gezien dan is spel gedaan
-        //en stop ik met bewegen
 
         
     }
