@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     #region Fields
 
+
+    [SerializeField]
+    private CharacterController _character;
+
     [SerializeField]
     private GameObject _skullModel;
 
@@ -66,7 +70,7 @@ public class PlayerController : MonoBehaviour
         if (!_falling && !_stunned)
         {
             Vector3 velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * Time.deltaTime * _speed;
-            this.transform.position += velocity;
+            _character.Move(velocity);
             if(velocity.magnitude != 0)
             {
                 this.transform.forward = velocity.normalized;
