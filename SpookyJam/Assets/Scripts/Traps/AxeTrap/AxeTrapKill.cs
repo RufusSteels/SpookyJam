@@ -5,7 +5,6 @@ using UnityEngine;
 public class AxeTrapKill : MonoBehaviour
 {
     [SerializeField] private GameObject _axe;
-    [SerializeField] private AudioSource _splat;
     void Start()
     {
         GameObject[] destroy = GameObject.FindGameObjectsWithTag("Destroy");
@@ -23,7 +22,6 @@ public class AxeTrapKill : MonoBehaviour
         }
         if (other.tag == "Enemy")
         {
-            _splat.Play();
             Destroy(other.gameObject);
             //enemy die
         }

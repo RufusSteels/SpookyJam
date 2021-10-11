@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Pitfall : MonoBehaviour
-{
-    [SerializeField]
-    private AudioSource _wilhelm;
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            //you die
-        }
-        if (other.tag == "Enemy")
-        {
-            _wilhelm.Play();
-            Destroy(other.gameObject);
-            //enemy die
-        }
-    }
-}
-=======
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -58,4 +33,3 @@ public class Pitfall : MonoBehaviour
         }
     }
 }
->>>>>>> main
