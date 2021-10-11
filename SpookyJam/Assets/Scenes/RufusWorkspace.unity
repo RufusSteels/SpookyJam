@@ -123,12 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!82 &60459726 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6931805377474524931, guid: 98c58743b25574f44b296a021b380614,
-    type: 3}
-  m_PrefabInstance: {fileID: 1989863438}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145938471
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +206,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!82 &689957823 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: -1552705011578457112, guid: 98c58743b25574f44b296a021b380614,
+    type: 3}
+  m_PrefabInstance: {fileID: 1989863438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1934373651
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,11 +312,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1552705011578457112, guid: 98c58743b25574f44b296a021b380614,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1438023339687953404, guid: 98c58743b25574f44b296a021b380614,
         type: 3}
       propertyPath: bonk
       value: 
-      objectReference: {fileID: 60459726}
+      objectReference: {fileID: 689957823}
     - target: {fileID: 4195366982463807216, guid: 98c58743b25574f44b296a021b380614,
         type: 3}
       propertyPath: m_RootOrder
