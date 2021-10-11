@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     #region Fields
-
+    [SerializeField]
+    private Camera _cam;
 
     [SerializeField]
     private CharacterController _character;
@@ -42,6 +43,8 @@ public class PlayerController : MonoBehaviour
         _startPos = _skullModel.transform.localPosition;
         _startRot = _skullModel.transform.localRotation;
 
+        _cam = Camera.main;
+
         _enemies = GameObject.FindGameObjectsWithTag("Enemy");
     }
 
@@ -69,11 +72,28 @@ public class PlayerController : MonoBehaviour
     {
         if (!_falling && !_stunned)
         {
-            Vector3 velocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            _character.Move(velocity * Time.deltaTime * _speed);
-            if(velocity!=Vector3.zero)
+            //reading the input:
+            float horizontalAxis = Input.GetAxis("Horizontal");
+            float verticalAxis = Input.GetAxis("Vertical");
+
+            //camera forward and right vectors:
+            var forward = _cam.transform.forward;
+            var right = _cam.transform.right;
+
+            //project forward and right vectors on the horizontal plane (y = 0)
+            forward.y = 0f;
+            right.y = 0f;
+            forward.Normalize();
+            right.Normalize();
+
+            //this is the direction in the world space we want to move:
+            var desiredMoveDirection = forward * verticalAxis + right * horizontalAxis;
+
+            _character.Move(desiredMoveDirection * Time.deltaTime * _speed);
+
+            if(desiredMoveDirection!=Vector3.zero)
             { 
-                this.transform.forward = velocity;
+                this.transform.forward = desiredMoveDirection;
             }
         }
     }
