@@ -11,12 +11,19 @@ public class StartSceneCam : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             if (_currentCam < _camPos.Length - 1)
                 _currentCam++;
             else
                 _currentCam = 0;
+        }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0f || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            if (_currentCam > 0)
+                _currentCam--;
+            else
+                _currentCam = _camPos.Length - 1;
         }
 
         this.transform.position = Vector3.Lerp(this.transform.position, _camPos[_currentCam].position, 2 * Time.deltaTime);
