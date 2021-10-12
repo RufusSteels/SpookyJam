@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -15,6 +14,9 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent _agent;
     [SerializeField]
     private LevelManager _levelManager;
+
+    [SerializeField] 
+    private AudioSource _crack;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,7 @@ public class EnemyController : MonoBehaviour
         }else if (other.gameObject.tag == "Friendly")
         { 
             _levelManager.RemoveFriendly(other.gameObject);
+            _crack.Play();
             FindNearestFriendly();
         }
     }
