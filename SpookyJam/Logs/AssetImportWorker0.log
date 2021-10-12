@@ -909,3 +909,75 @@ Received Import Request.
 Start importing Assets/Prefabs/LowResMode.prefab using Guid(8e3240775c4791249b36ad34470cd424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ec7323f2b399cabf9c3ee1c218ec25') in 0.030804 seconds 
   Import took 0.033412 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 853.035572 seconds.
+  path: Assets/Prefabs/Trap Pitfall.prefab
+  artifactKey: Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Trap Pitfall.prefab using Guid(3c7aa49e5be58694ab2361060baafb61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b66b5158dd6f8a448b9e48923cf6f4e') in 0.058846 seconds 
+  Import took 0.062633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.704273 seconds.
+  path: Assets/Models/Pitfall.png
+  artifactKey: Guid(f1e14670afac8474a9ef0e465c2bb3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Pitfall.png using Guid(f1e14670afac8474a9ef0e465c2bb3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5049a70e8d93a369d73ce5ca229291') in 0.015993 seconds 
+  Import took 0.020359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa239bae4d2876699215cdb64a90ad70') in 0.066410 seconds 
+  Import took 0.068912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.889653 seconds.
+  path: Assets/Materials/MAT_Gnd.mat
+  artifactKey: Guid(72506776bcb753a4784e9a9e29d4dd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MAT_Gnd.mat using Guid(72506776bcb753a4784e9a9e29d4dd08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e274cf62cc5c75f9482481724b3dc6') in 0.023398 seconds 
+  Import took 0.026041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.863079 seconds.
+  path: Assets/Materials/MAT_Pitfall.mat
+  artifactKey: Guid(2f4b7f01544865246a94408cc04f29d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/MAT_Pitfall.mat using Guid(2f4b7f01544865246a94408cc04f29d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab88bfd83f09fe952c33ae596a532dc') in 0.012860 seconds 
+  Import took 0.015633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.699148 seconds.
+  path: Assets/SourceImages/Pitfall.png
+  artifactKey: Guid(5015988ddd74b1d459eac269270cf7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SourceImages/Pitfall.png using Guid(5015988ddd74b1d459eac269270cf7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc1083146acf86df8b2e822b31bb586a') in 0.011356 seconds 
+  Import took 0.014475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.835380 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48198283c328dfda8b47743502721d9c') in 0.024669 seconds 
+  Import took 0.027497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.351259 seconds.
+  path: Assets/Models/Trap_Pitfall.obj
+  artifactKey: Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.obj using Guid(ac9436a09425ead4ba295c2e4700e936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ab41279ec269f03ca96d0e59b64a47') in 0.023457 seconds 
+  Import took 0.027643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.497816 seconds.
+  path: Assets/Models/Trap_Pitfall.mtl
+  artifactKey: Guid(dcae862868ef39c4bb9392f81cb39a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Pitfall.mtl using Guid(dcae862868ef39c4bb9392f81cb39a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d8553296d17406203110a447ba780f') in 0.006326 seconds 
+  Import took 0.008705 seconds .
+
