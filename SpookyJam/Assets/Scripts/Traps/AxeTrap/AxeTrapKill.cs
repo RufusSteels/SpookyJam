@@ -7,15 +7,6 @@ public class AxeTrapKill : MonoBehaviour
     [SerializeField] private GameObject _axe;
     [SerializeField] private AudioSource _splat;
 
-    void Start()
-    {
-        GameObject[] destroy = GameObject.FindGameObjectsWithTag("Destroy");
-        foreach (var gameObject in destroy)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")

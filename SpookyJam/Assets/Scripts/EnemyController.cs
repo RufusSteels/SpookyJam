@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         float dist = _agent.remainingDistance;
-        if (!float.IsPositiveInfinity(dist) && _agent.pathStatus == NavMeshPathStatus.PathComplete && _agent.remainingDistance == 0)
+        if (!float.IsPositiveInfinity(dist)  && _agent.remainingDistance <= 0.2f)
         {
             FindNearestFriendly();
         }
@@ -37,7 +37,6 @@ public class EnemyController : MonoBehaviour
         {
             if (collider.tag == "Friendly")
             {
-                Debug.Log("FOUND YA");
                 _agent.destination = collider.gameObject.transform.position;
                 this.GetComponent<Wander>().enabled = false;
                 foundFriendly = true;
@@ -54,23 +53,24 @@ public class EnemyController : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("GEZIEN!");
-            Time.timeScale = 0.001f;
+            _levelManager.RemovePlayer();
+
         }else if (other.gameObject.tag == "Friendly")
-        {
-            Debug.Log("KHEB JE VRIENDEN!");
+        { 
             _levelManager.RemoveFriendly(other.gameObject);
-            //Time.timeScale = 0.001f;
+            FindNearestFriendly();
         }
     }
 
     public void Ping(Vector3 destination)
     {
         _agent.destination = destination;
+        _agent.gameObject.GetComponent<Wander>().enabled = false;
         Debug.Log("huh? Wat hoor ik daar?");
     }
 
     public void Kill()
     {
-        _levelManager.RemoveHero(this.gameObject);
+        _levelManager.RemoveHero(gameObject);
     }
 }
