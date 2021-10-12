@@ -22,7 +22,10 @@ public class AxeTrapKill : MonoBehaviour
         }
         if (other.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            if(other.TryGetComponent<EnemyController>(out EnemyController enemy))
+            {
+                enemy.Kill();
+            }
             //enemy die
         }
     }
