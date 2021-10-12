@@ -5050,12 +5050,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1489f20d335109c46b68973374d78c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _friendlies: []
-  _heroes: []
+  sceneLoader: {fileID: 1617333151}
   _friendliesText: {fileID: 1612541235}
   _heroesText: {fileID: 1155005512}
-  RemainingFriendlies: 0
-  RemainingHeroes: 0
 --- !u!4 &1617333150
 Transform:
   m_ObjectHideFlags: 0

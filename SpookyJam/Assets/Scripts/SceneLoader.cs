@@ -17,4 +17,9 @@ public class SceneLoader : MonoBehaviour
         int levelIndex = Random.Range(0,_levelAmount);
         SceneManager.LoadScene($"Level_{levelIndex}");
     }
+
+    public void Load(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 }
