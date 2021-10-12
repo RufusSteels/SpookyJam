@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxLifeTime: 10
-  _maxStages: 10
+  _maxStages: 4
   _pitfall: {fileID: 4523607772667302242, guid: 3c7aa49e5be58694ab2361060baafb61,
     type: 3}
   _model: {fileID: 4171792627628032904}

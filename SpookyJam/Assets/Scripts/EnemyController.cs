@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Assets.Scripts;
 using UnityEngine;
 using UnityEngine.AI;
@@ -31,17 +32,24 @@ public class EnemyController : MonoBehaviour
     }
     private void FindNearestFriendly()
     {
+        List<GameObject> friendliesList = new List<GameObject>();
         bool foundFriendly = false;
         Collider[] allObjs = Physics.OverlapSphere(this.transform.position, _lookRadius);
         foreach (var collider in allObjs)
         {
             if (collider.tag == "Friendly")
             {
-                _agent.destination = collider.gameObject.transform.position;
-                this.GetComponent<Wander>().enabled = false;
-                foundFriendly = true;
+                friendliesList.Add(collider.gameObject);
             }
         }
+
+        if (friendliesList.Count > 0)
+        {
+            _agent.destination = friendliesList.First().transform.position;
+            this.GetComponent<Wander>().enabled = false;
+            foundFriendly = true;
+        }
+
         if (!foundFriendly)
         {
             this.GetComponent<Wander>().enabled = true;
@@ -52,7 +60,6 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("GEZIEN!");
             _levelManager.RemovePlayer();
 
         }else if (other.gameObject.tag == "Friendly")
@@ -66,7 +73,6 @@ public class EnemyController : MonoBehaviour
     {
         _agent.destination = destination;
         _agent.gameObject.GetComponent<Wander>().enabled = false;
-        Debug.Log("huh? Wat hoor ik daar?");
     }
 
     public void Kill()
