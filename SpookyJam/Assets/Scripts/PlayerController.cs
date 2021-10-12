@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
     #region Methods
     private void CheckInputs()
     {
-        if (Input.GetButtonDown("Drop"))
+        if (Input.GetButtonDown("Drop") && !_stunned)
         {
             _falling = true;
         }
