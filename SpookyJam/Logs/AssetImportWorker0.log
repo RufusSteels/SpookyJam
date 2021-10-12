@@ -981,3 +981,19 @@ Received Import Request.
 Start importing Assets/Models/Trap_Pitfall.mtl using Guid(dcae862868ef39c4bb9392f81cb39a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d8553296d17406203110a447ba780f') in 0.006326 seconds 
   Import took 0.008705 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2916.826429 seconds.
+  path: Assets/Models/Axetrap.png
+  artifactKey: Guid(417e2b970bfb37045a8f0d2367a8ba63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Axetrap.png using Guid(417e2b970bfb37045a8f0d2367a8ba63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42afa932070ff422f43e462ef8237ef6') in 0.048530 seconds 
+  Import took 0.071027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Models/Trap_Axe.obj
+  artifactKey: Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Trap_Axe.obj using Guid(b7924fcc89f2d6743be8206acc511ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7717e47619507cb2b50ecb9af2d4df19') in 0.077110 seconds 
+  Import took 0.080697 seconds .
+
