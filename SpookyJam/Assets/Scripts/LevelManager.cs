@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] Friendlies;
+    private GameObject[] _friendlies;
+
     [SerializeField]
     private Text _friendliesText;
 
@@ -15,7 +16,8 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        _maxFriendlies = Friendlies.Length;
+        _friendlies = GameObject.FindGameObjectsWithTag("Friendly");
+        _maxFriendlies = _friendlies.Length;
         _remainingFriendlies = _maxFriendlies;
         _friendliesText.text = _remainingFriendlies.ToString() + "/" + _maxFriendlies.ToString();
     }

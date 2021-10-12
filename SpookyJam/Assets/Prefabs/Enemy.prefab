@@ -63,7 +63,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _detectionCube: {fileID: 9148047757292190478}
-  _lookRadius: 0
+  _lookRadius: 20
+  _levelManager: {fileID: 0}
 --- !u!195 &5561980360833055713
 NavMeshAgent:
   m_ObjectHideFlags: 0
