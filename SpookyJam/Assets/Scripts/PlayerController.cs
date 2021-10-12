@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     private Camera _cam;
 
     [SerializeField]
+    private List<Image> _healthImages;
+
+    [SerializeField]
     private CharacterController _character;
 
     [SerializeField]
@@ -126,8 +129,24 @@ public class PlayerController : MonoBehaviour
                 _cooldownImage.fillAmount = 1;
                 EmitNoise();
                 Dig();
+                LooseHP();
+                
             }
         }
+    }
+
+    private void LooseHP()
+    {
+        if (_healthImages.Count > 1)
+        {
+            Destroy(_healthImages[_healthImages.Count-1].gameObject);
+            _healthImages.RemoveAt(_healthImages.Count - 1);
+        }
+        else
+        {
+            Time.timeScale = 0.00001f;
+        }
+
     }
 
     //stun the player for a moment after he dropped
