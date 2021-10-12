@@ -58,8 +58,7 @@ public class EnemyController : MonoBehaviour
         }else if (other.gameObject.tag == "Friendly")
         {
             Debug.Log("KHEB JE VRIENDEN!");
-            _levelManager.RemainingFriendlies--;
-            Destroy(other.gameObject);
+            _levelManager.RemoveFriendly(other.gameObject);
             //Time.timeScale = 0.001f;
         }
     }
@@ -72,7 +71,6 @@ public class EnemyController : MonoBehaviour
 
     public void Kill()
     {
-        _levelManager.RemainingHeroes--;
-        Destroy(this.gameObject);
+        _levelManager.RemoveHero(this.gameObject);
     }
 }
