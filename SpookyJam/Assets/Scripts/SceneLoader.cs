@@ -7,6 +7,14 @@ public class SceneLoader : MonoBehaviour
 {
     private int _levelAmount = 3;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("StartScene");
+        }
+    }
+
     public void Load(int levelIndex)
     {
         SceneManager.LoadScene($"Level_{levelIndex}");
