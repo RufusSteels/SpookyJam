@@ -29,6 +29,6 @@ public class AxeTrapKill : MonoBehaviour
 
     void Update()
     {
-        _axe.transform.rotation = Quaternion.Lerp(_axe.transform.rotation, Quaternion.Euler(65, 0, 0), Time.deltaTime * 5);
+        _axe.transform.localRotation = Quaternion.Lerp(_axe.transform.localRotation, Quaternion.Euler(65, 0, 0), Time.deltaTime * 5);
     }
 }
