@@ -28,7 +28,7 @@ public class Hole : MonoBehaviour
     public void Dig()
     {
         _stage++;
-        _model.transform.localScale += new Vector3(.1f, .1f, .1f);
+        _model.transform.localScale += new Vector3(.03f, .03f, .03f);
 
         if (_stage >= _maxStages)
         {

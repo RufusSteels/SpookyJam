@@ -116,7 +116,7 @@ MonoBehaviour:
   _digLayer:
     serializedVersion: 2
     m_Bits: 64
-  _digRadius: 100
+  _digRadius: 3
   _hole: {fileID: 3622925596215104427, guid: 87c7a649a0b1aec408ee175a87a7192a, type: 3}
   _stunTime: 0.5
 --- !u!82 &-1552705011578457112
