@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera _cam;
 
+    [SerializeField] 
+    private LevelManager _levelManager;
+
     [SerializeField]
     private List<Image> _healthImages;
 
@@ -144,7 +147,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 0.00001f;
+            _levelManager.RemovePlayer();
         }
 
     }
