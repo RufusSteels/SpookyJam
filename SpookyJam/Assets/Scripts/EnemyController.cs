@@ -52,7 +52,6 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("GEZIEN!");
             _levelManager.RemovePlayer();
 
         }else if (other.gameObject.tag == "Friendly")
@@ -66,7 +65,6 @@ public class EnemyController : MonoBehaviour
     {
         _agent.destination = destination;
         _agent.gameObject.GetComponent<Wander>().enabled = false;
-        Debug.Log("huh? Wat hoor ik daar?");
     }
 
     public void Kill()
