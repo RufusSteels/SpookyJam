@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private int _levelAmount = 3;
+    private int _levelAmount = 4;
 
     void Update()
     {
