@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
         foreach (GameObject e in _enemies)
         {
-            if(e.TryGetComponent<EnemyController>(out var enemy))
+            if(e != null && e.TryGetComponent<EnemyController>(out var enemy))
             {
                 enemy.Ping(this.transform.position);
             }
