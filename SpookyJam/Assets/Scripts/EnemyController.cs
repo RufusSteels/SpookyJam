@@ -69,4 +69,10 @@ public class EnemyController : MonoBehaviour
         _agent.destination = destination;
         Debug.Log("huh? Wat hoor ik daar?");
     }
+
+    public void Kill()
+    {
+        _levelManager.RemainingHeroes--;
+        Destroy(this.gameObject);
+    }
 }

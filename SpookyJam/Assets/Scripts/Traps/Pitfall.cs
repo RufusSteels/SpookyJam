@@ -28,7 +28,10 @@ public class Pitfall : MonoBehaviour
     {
         if (other.tag.Equals("Enemy"))
         {
-            Destroy(other.gameObject);
+            if (other.TryGetComponent<EnemyController>(out EnemyController enemy))
+            {
+                enemy.Kill();
+            }
             _isUsed = true;
         }
     }
