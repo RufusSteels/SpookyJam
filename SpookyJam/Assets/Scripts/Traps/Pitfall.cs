@@ -7,6 +7,8 @@ public class Pitfall : MonoBehaviour
     [SerializeField]
     private GameObject Cube;
 
+    [SerializeField] private AudioSource _wilhelm;
+
     private bool _isUsed = false;
 
     private void Start()
@@ -30,6 +32,7 @@ public class Pitfall : MonoBehaviour
         {
             if (other.TryGetComponent<EnemyController>(out EnemyController enemy))
             {
+                _wilhelm.Play();
                 enemy.Kill();
             }
             _isUsed = true;
