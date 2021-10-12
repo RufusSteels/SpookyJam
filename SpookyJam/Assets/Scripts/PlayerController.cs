@@ -23,6 +23,13 @@ public class PlayerController : MonoBehaviour
     private float _speed = 5f;
 
     [SerializeField]
+    private LayerMask _digLayer;
+    [SerializeField]
+    private float _digRadius;
+    [SerializeField]
+    private GameObject _hole;
+
+    [SerializeField]
     private float _stunTime = .5f;
     private float _stunTimer = 0;
 
@@ -65,8 +72,7 @@ public class PlayerController : MonoBehaviour
     #region Methods
     private void CheckInputs()
     {
-
-        if (Input.GetButtonDown("Drop")&&!_stunned)
+        if (Input.GetButtonDown("Drop") && !_stunned)
         {
             _falling = true;
         }
@@ -119,6 +125,7 @@ public class PlayerController : MonoBehaviour
                 _verticalVelocity = Vector3.zero;
                 _cooldownImage.fillAmount = 1;
                 EmitNoise();
+                Dig();
             }
         }
     }
@@ -151,6 +158,25 @@ public class PlayerController : MonoBehaviour
             {
                 enemy.Ping(this.transform.position);
             }
+        }
+    }
+
+    private void Dig()
+    {
+        Collider[] holes = Physics.OverlapSphere(this.transform.position, _digRadius, _digLayer);
+        if (holes.Length > 0)
+        {
+            foreach(Collider c in holes)
+            {
+                if (c.TryGetComponent<Hole>(out Hole hole))
+                {
+                    hole.Dig();
+                }
+            }
+        }
+        else
+        {
+            Instantiate(_hole, this.transform.position, Quaternion.identity);
         }
     }
     #endregion
