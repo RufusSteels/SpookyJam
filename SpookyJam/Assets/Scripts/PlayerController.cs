@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float _stunTime = .5f;
     private float _stunTimer = 0;
+
+    [SerializeField] 
+    private Image _cooldownImage;
 
     private Vector3 _verticalVelocity = Vector3.zero;
 
@@ -61,7 +65,8 @@ public class PlayerController : MonoBehaviour
     #region Methods
     private void CheckInputs()
     {
-        if (Input.GetButtonDown("Drop"))
+
+        if (Input.GetButtonDown("Drop")&&!_stunned)
         {
             _falling = true;
         }
@@ -112,6 +117,7 @@ public class PlayerController : MonoBehaviour
                 _stunned = true;
                 _stunTimer = _stunTime;
                 _verticalVelocity = Vector3.zero;
+                _cooldownImage.fillAmount = 1;
                 EmitNoise();
             }
         }
@@ -123,6 +129,7 @@ public class PlayerController : MonoBehaviour
         if (_stunned)
         {
             _stunTimer -= Time.deltaTime;
+            _cooldownImage.fillAmount -= Time.deltaTime * (1/_stunTime);
 
             if(_stunTimer < 0)
             {

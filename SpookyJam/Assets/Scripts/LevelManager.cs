@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,21 +10,19 @@ public class LevelManager : MonoBehaviour
     private GameObject[] _friendlies;
 
     [SerializeField]
-    private Text _friendliesText;
+    private TextMeshProUGUI _friendliesText;
 
-    private int _maxFriendlies;
-    public int _remainingFriendlies;
+    public int RemainingFriendlies;
 
     void Start()
     {
         _friendlies = GameObject.FindGameObjectsWithTag("Friendly");
-        _maxFriendlies = _friendlies.Length;
-        _remainingFriendlies = _maxFriendlies;
-        _friendliesText.text = _remainingFriendlies.ToString() + "/" + _maxFriendlies.ToString();
+        RemainingFriendlies = _friendlies.Length;
     }
     private void Update()
     {
-        _friendliesText.text = _remainingFriendlies.ToString() + "/" + _maxFriendlies.ToString();
+        _friendliesText.text = RemainingFriendlies.ToString();
+
     }
 
 }
